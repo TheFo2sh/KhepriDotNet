@@ -30,19 +30,23 @@ To create a store, define a class inheriting from `Store<T>` and use the `[Actio
 public class StudentRecordStore : Store<StudentRecord>
 {
     [Action]
-    public void UpdateName(string name) 
+    public StudentRecord UpdateName(string name) 
     {
-        // Update name logic
+        return CurrentState with { Name = name };
     }
 
     [Action]
-    public void UpdateAge(int age) 
+    public StudentRecord UpdateAge(int age) 
     {
         // Update age logic
     }
+    
+    protected override void Validate(StudentRecord state)
+    {
+        // Implement validation logic here
+    }
 }
 ```
-Absolutely, here's an elaboration on the importance of validation for state consistency:
 
 ---
 

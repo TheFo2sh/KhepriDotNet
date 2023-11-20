@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net7.0;netstandard2.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <Version>1.0.0</Version>
+        <Authors>Ahmed Fouad</Authors>
+        <Company>Ahmed Fouad</Company>
+        <Product>KhepriDotNet</Product>
+        <Description>KhepriDotNet is a versatile .NET library for reactive state management, combining FRP principles with .NET's robustness. It's tailored for developers seeking advanced, responsive state handling in their applications.".</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/TheFo2sh/KhepriDotNet</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/TheFo2sh/KhepriDotNet</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>StateManagement ReactiveProgramming FRP Immutability</PackageTags>
+        <PackageReadmeFile>readme.md</PackageReadmeFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>KhepriDotNet</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="../readme.md" Pack="true" PackagePath="" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Castle.Windsor" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+        <PackageReference Include="System.Reactive" Version="6.0.0" />
+        <PackageReference Include="System.Reactive.Linq" Version="6.0.0" />
+    </ItemGroup>
+</Project>
